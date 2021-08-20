@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Список задач с drag & drop</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+<!-- темы тоду листа навигационная панель  -->
+    <nav class="header navbar navbar-dark bg-primary">
+      <a class="navbar-brand" href="../../index.html">На главную</a>
+      <form class="form-inline">
+        <select class="form-control form-control-sm" id="themeSelect">
+          <option value="default">Стандартная тема</option>
+          <option value="light">Светлая тема</option>
+          <option value="dark">Темная тема</option>
+        </select>
+      </form>
+    </nav>
+<!-- Основной контейнер с задачами -->
+    <div class="container">
+      <section class="tasks">
+        <h1 class="tasks__title">To do list</h1>
+        
+        <ul class="tasks__list">
+          <li class="tasks__item">learn HTML</li>
+          <li class="tasks__item">learn CSS</li>
+          <li class="tasks__item">learn JavaScript</li>
+          <li class="tasks__item">learn PHP</li>
+          <li class="tasks__item">stay alive</li>
+        </ul>
+      </section>
+    </div>
+    <!-- Блок добавления задачи в лист  -->
+    <div class="form-section mt-5">
+      <div class="container">
+        <div class="row">
+            <div class="col col-8 mx-auto">
+             <h5 class="tasks__title">Добавь задачу</h5>
+                <form name="addTask">
+                  <input
+                    type="text"
+                    name="title"
+                    id="title"
+                    class="form-control"
+                    placeholder="Задача"
+                  />
+                  
+                  <button type="submit" class="btn btn-primary mt-4">
+                    Добавить
+                  </button>
+                </form>
+            </div>
+          </div>
+      </div>
+    </div>
+  
+
+    <script src="main.js"></script>
+  </body>
+</html>

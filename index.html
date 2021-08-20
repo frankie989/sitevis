@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Портфолио Junior JavaScript developer</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700|Old+Standard+TT&display=swap&subset=cyrillic" rel="stylesheet">
+
+
+  </head>
+
+  <body>
+
+<canvas class="smoke"></canvas>
+<meta name="viewport" content="width=device-width , initial-scale=1, maximum-scale=1">
+    <header class="page-header">
+      <div class="container">
+        <a class="header-email" href="mailto:artjke@icloud.com">artjke@icloud.com</a>
+        <a class="header-phone" href="tel:+79000777882">+7 9000 777 882</a>
+
+        <nav class="clearfix">
+       <ul class="clearfix">
+                    <li data-name="intro" data-speed="300"><span>Знакомство</span></li>
+                    <li data-name="skills" data-speed="300">Мои навыки</li>
+                    <li data-name="portfolio" data-speed="600">Мои работы</li>
+                    <li data-name="page-footer" data-speed="900">Резюме</li>
+                </ul>
+           
+        </nav>
+      </div>
+    </header>
+
+    <!-- Главный блок  -->
+    <div class="container">
+    <section class="hero-image">
+      <h1 class="heading">Филатов Алексей Борисович</h1>
+      <p>Junior JavaScript developer</p>
+    </section>
+      </div>
+
+<!-- блок знакомство расскаж о себе -->
+    <section class="intro">
+      <h2 class="subheading">Давайте познакомимся</h2>
+      <figure>
+        <img src="files/user2.jpeg"  height="500" alt="Личное фото">
+      </figure>
+      <h3>Пара слов о себе</h3>
+      <p>Меня зовут Алексей мне 30 лет. Имею среднее специальное образование механика, а также у меня высшее образование в сфере экономики и управлением предприятия.</p>
+        <p>Я работал в данной сфере в разных компаниях и в каждой достигал высокого уровня, например в ПАО ЧТПЗ я прошел путь от резчика труб до руководителя ремонтной службы основного цеха. Управлял большим коллективом и изучал автоматизацию производства.</p>
+        <p>После я решил погрузиться в творчество и занялся профессионально фотографией и самостоятельным изучением програмирования.</p>
+      <p>Меня очень увлек мир програмирования и создания проектов, я хочу реализовать свой потенциал в этой профессии, так как мне очень интересно находить нестандартные решения задач по созданию сайтов или приложений.</p>
+      <h3>Чем могу быть полезен</h3>
+      <p>Я целеустремленный человек, если мне что то нравится я могу этим заниматься сутками на пролет.</p>
+      <p>Готов совершенствоваться в любом направлении.</p>
+      <p>На данный момент хорошо разбираюсь в Photoshop, Сoreldraw, Illustrator, конечно же HTML и CSS(Препроцессоры CSS), JavaScript. Еще изучаю Инструменты контроля версий (Git, GitHub, CVS и т. д.) Базы данных и языки запросов (SQL, MySql, NoSQL, MongoDB и т. д.) так же jQuery и React.JS. Умею работать в режиме многозадачности.</p>
+  </section>
+
+    <!-- блок навыки  -->
+      <div class="skills">
+        <h3 class="subheading">Мои навыки</h3>
+       <dl class="skills-list">
+        <dt class="skill-html">HTML</dt>
+        <dd class="level"><div style="width: 80%;">80%</div></dd>
+        <dt class="skill-css">CSS</dt>
+        <dd class="level"><div style="width: 80%;">80%</div></dd>
+        <dt class="skill-js">JS</dt>
+        <dd class="level"><div style="width: 70%;">70%</div></dd>
+        </dl>
+    </div>
+    <h3 class="subheading">Мои работы</h3>
+
+    <!-- блок портфолио  -->
+    <div class="flex">
+       <div>
+        <section class="portfolio">
+          <figure class="project-image">
+             <img src="files/project.jpg" alt="Cайт инструктора Кекса">
+            </figure>
+          <h3>Сайт Кекса</h3>
+            <p>Небольшой лендинг о школе для начинающих. <br>Статический блог про обучение HTML и CSS.</p>
+            <a class="button" href="source/project/index.html">Открыть страницу</a>
+
+          </section>
+        </div>
+    <!-- Гифка робот -->
+    <div>
+      <section class="portfolio">
+        <figure class="project-gif">
+      <img src="/files/robot.jpg" alt="Robot gif">
+    </figure>
+          <h3>Funy robot</h3>
+        <p>Узнай чего я хочу!<br>Отправляет запрос на сервер с текстом<br> и возвращает звуковую дорожку.</p>
+           <button class="button" id="button" >click me</button>
+        <audio  id= "audio" controls hidden></audio>
+      </section>
+    </div>
+    <!-- to do list  -->
+    <div>
+      <section class="portfolio">
+        <figure class="project-list">
+      <img src="/files/to-do-list.jpg" alt="To Do List">
+    </figure>
+          <h3>To Do List</h3>
+        <p>Создавай задачи!<br>Меняй их местами<br>и удаляй когда выполнишь.</p>
+        <a class="button" href="source/toDoList/index.html">Открыть страницу</a>
+      </section>
+    </div>
+    </div>
+
+<!--Шуточный опросник который не отправляет форму -->
+<h3 class="subheading">Оцените мой сайт</h3>
+      <span class="light-theme">
+        <div class="poll">
+         <form action="#">
+          <fieldset>
+            <legend>Насколько вам он понравился?</legend>
+          <p class="poll-option">
+            <input class="review visually-hidden" data-evaluation="bad" type="radio" name="review" id="option1" value="Всё ужасно!">
+            <label for="option1">Всё ужасно!</label>
+          </p>
+          <p class="poll-option">
+            <input class="review visually-hidden" data-evaluation="bad" type="radio" name="review" id="option2" value="Так себе">
+            <label for="option2">Так себе</label>
+          </p>
+          <p class="poll-option">
+            <input class="review visually-hidden" data-evaluation="good" type="radio" name="review" id="option3" value="Хочу больше новостей">
+            <label for="option3">Хочу больше JS</label>
+          </p>
+          <p class="poll-option">
+            <input class="review visually-hidden" data-evaluation="bad" type="radio" name="review" id="option4" value="Сойдёт">
+            <label for="option4">Сойдёт</label>
+          </p>
+          <p class="poll-option">
+            <input class="review visually-hidden" data-evaluation="good" type="radio" name="review" id="option5" value="Лучше не бывает!">
+            <label for="option5">Отличный сайт!</label>
+          </p>
+          <p class="poll-option">
+            <input class="review visually-hidden" data-evaluation="good" type="radio" name="review" id="option6" value="Мой любимый сайт!">
+            <label for="option6">Вас  точно стоит взять на работу!</label>
+          </p>
+          <p class="error">Произошла ошибка! Попробуйте выбрать другой вариант ;)</p>
+          <p>
+            <button class="button submit-button" type="submit">Отправить отзыв</button>
+          </p>
+        </fieldset>
+          </form>
+        </div>
+      </span>
+
+<!-- блок подвала -->
+    <footer class="page-footer">
+      <div class="container">
+        <a class="footer-email" href="mailto:artjke@icloud.com">artjke@icloud.com</a>
+        <a class="footer-phone" href="tel:+79000777882">+7 9000 777 882</a>
+
+<!--    Кнопка дляскачивания резюме     -->
+      <form action="res.pdf" method="post" target="_blank">
+          <button class="file" data-wow-delay='2s' type='submit'>скачать резюме</button>
+        </form>
+
+      </div>
+    </footer>
+    <script src='fff.js'></script>
+    <script type="text/javascript" src="jquery/jquery.js"></script>
+    <script async type="text/javascript" src="javascript/script_1.js"></script>
+      </body>
+</html>
+
+

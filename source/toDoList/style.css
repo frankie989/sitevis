@@ -1,0 +1,135 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-width: 630px;
+  font-family: "Tahoma", sans-serif;
+  font-size: 18px;
+  line-height: 25px;
+  color: #164a44;
+  background-color: #b2d9d0;
+}
+
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.tasks__title {
+  margin: 50px 0 20px 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.tasks__list {
+  margin: 0;
+  padding: 0;
+  
+  list-style: none;
+}
+
+.tasks__item {
+  max-width: 250px;
+  margin-bottom: 10px;
+  padding: 5px;
+  
+  text-align: center;
+  border: 2px dashed #b2d9d0;
+  border-radius: 10px;
+  cursor: move;
+  background-color: #dff2ef;
+
+  transition: background-color 0.5s;
+}
+
+.tasks__item:last-child {
+  margin-bottom: 0;
+}
+
+.selected {
+  opacity: 0.6;
+}
+
+
+
+
+
+
+
+
+:root {
+  --base-text-color: #212529;
+  --header-bg: #583cb3;
+  --header-text-color: #fff;
+  --default-btn-bg: #583cb3;
+  --default-btn-text-color: #fff;
+  --default-btn-hover-bg: #3b15b9;
+  --default-btn-border-color: #3b15b9;
+  --danger-btn-bg: #dc3545;
+  --danger-btn-text-color: #fff;
+  --danger-btn-hover-bg: #bd2130;
+  --danger-btn-border-color: #dc3545;
+  --input-border-color: #ced4da;
+  --input-bg-color: #fff;
+  --input-text-color: #495057;
+  --input-focus-bg-color: #fff;
+  --input-focus-text-color: #495057;
+  --input-focus-border-color: #80bdff;
+  --input-focus-box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+body {
+  color: var(--base-text-color);
+}
+
+.navbar {
+  background: var(--header-bg) !important;
+}
+
+.header .navbar-brand {
+  color: var(--header-text-color) !important;
+}
+
+.btn.btn-primary,
+.btn-primary:not(:disabled):not(.disabled):active {
+  color: var(--default-btn-text-color);
+  background-color: var(--default-btn-bg);
+  border-color: var(--default-btn-border-color);
+}
+.btn-primary:not(:disabled):not(.disabled):active:focus {
+  box-shadow: var(--default-btn-focus-box-shadow);
+}
+.btn.btn-primary:hover {
+  color: var(--default-btn-text-color);
+  background-color: var(--default-btn-hover-bg);
+  border-color: var(--default-btn-border-color);
+}
+
+.btn.btn-danger,
+.btn-danger:not(:disabled):not(.disabled):active {
+  color: var(--danger-btn-text-color);
+  background-color: var(--danger-btn-bg);
+  border-color: var(--danger-btn-border-color);
+}
+
+.btn.btn-danger:hover {
+  color: var(--danger-btn-text-color);
+  background-color: var(--danger-btn-hover-bg);
+  border-color: var(--danger-btn-border-color);
+}
+
+.form-control {
+  background: var(--input-bg-color);
+  border-color: var(--input-border-color);
+  color: var(--input-text-color);
+}
+
+.form-control:focus {
+  color: var(--input-focus-text-color);
+  background-color: var(--input-focus-bg-color);
+  border-color: var(--input-focus-border-color);
+  box-shadow: var(--input-focus-box-shadow);
+}
