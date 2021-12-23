@@ -231,6 +231,11 @@ nav {
 	color: #f9dd79;
 }
 
+.text-greeting {
+	font: normal 16px Verdana, sans-serif;
+	line-height: 24px;
+}
+
 .intro .container {
 	position: relative;
 }
